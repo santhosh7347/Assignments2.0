@@ -1,0 +1,18 @@
+num = int(input ("Enter n value"))  
+num_1 = 0  
+num_2 = 1  
+count = 0  
+if num <= 0:  
+    print ("Please enter a positive integer")  
+elif num == 1:  
+    print ("The Fibonacci  numbers ", num, ": ")  
+    print(num_1)  
+else:  
+    print ("The fibonacci sequence of the numbers is:")  
+    while count < num:  
+        print(num_1)  
+        nth = num_1 + num_2  
+       # At last, we will update values  
+        num_1 = num_2  
+        num_2 = nth  
+        count += 1  
