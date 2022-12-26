@@ -1,0 +1,12 @@
+def unique_fruits(fruit):
+   # create an empty list
+   unique_fruit = []
+   # for loop to traverse the list elements
+   for traverse in fruit:
+      # check if element not present in list
+      if traverse not in unique_fruit:
+         unique_fruit.append(traverse) # append the unique element
+   return unique_fruit
+
+fruits = ['apple', 'orange', 'mango', 'apple', 'orange', 'mango']
+print(unique_fruits(fruits))
